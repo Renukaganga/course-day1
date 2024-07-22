@@ -2,7 +2,7 @@
 function One() {
     return (
       <div className="App">
-      <h1> component </h1>
+      <h1> component 1</h1>
       </div>
     );
   }
