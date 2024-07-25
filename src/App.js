@@ -1,13 +1,24 @@
+
+import React from "react";
+import Register from "./Register";
+import Cond from "./Cond";
+import DataFetching from "./DataFetching";
+import { BrowserRouter ,Routes,Route} from "react-router-dom";
+
 function App() {
-  const arr = [1, 2, 3, 4]
+  
  
   return (
     <div className="App">
-      <ul>
-        {arr.map((val) => {
-          return <li key={val}>{val}</li>;
-        })}
-      </ul>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Cond />}/>
+      <Route path="/data" element={<DataFetching />} />
+      
+
+    </Routes>
+    </BrowserRouter>
+    
     </div>
   );
 }
